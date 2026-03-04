@@ -44,7 +44,7 @@ Route::middleware([
         // CRUD de Doctores
         Route::resource('doctors', DoctorController::class);
 
-        // Rutas de soporte.
+        // Rutas de soporte
         Route::resource('tickets', TicketController::class);
     });
 });
