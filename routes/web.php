@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\PatientController;
 use App\Http\Controllers\Admin\DoctorController;
+use App\Http\Controllers\Admin\TicketController;
 
 Route::redirect('/', '/admin');
 
@@ -42,5 +43,8 @@ Route::middleware([
 
         // CRUD de Doctores
         Route::resource('doctors', DoctorController::class);
+
+        // Rutas de soporte (Tickets)
+        Route::resource('tickets', TicketController::class);
     });
 });
